@@ -1,0 +1,838 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    /* box-sizing: border-box; */
+    /* display: none; */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100vw;
+    color: #262626;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 90vw;
+    background-color: white;
+    font-size: 17px;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 73px;
+    /* object-fit: cover; */
+    border: 0.1px solid transparent;
+    /* Make the border transparent */
+    box-shadow: 0 0 10px rgba(197, 205, 252, 0.6);
+}
+
+nav img {
+    object-fit: contain;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul button {
+    height: 40px;
+    width: 142px;
+    font-size: 15px;
+    font-weight: 500;
+    /* border: none; */
+    border-style: none;
+    border-radius: 7px;
+    color: white;
+    background-color: #6674CC;
+}
+
+
+.lander {
+    display: flex;
+}
+
+.info div {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: white; */
+    gap: 13px;
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.land-1 {
+    height: 100vh;
+    width: 550px;
+    font-size: 18px;
+    font-weight: 600;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* padding: 0px 73px; */
+    padding-left: 73px;
+    gap: 23px;
+}
+
+.land-1 .deltab {
+    font-size: 32px;
+    font-weight: 700;
+    max-width: 75%;
+
+    /* background-color: blue; */
+}
+
+.land-1 .deltab span {
+    color: #364BC5;
+}
+
+.land-2 {
+    height: 100vh;
+    width: 550px;
+    padding-top: 45px;
+    /* background-color: red; */
+    overflow: hidden;
+    /* Ensures image doesn’t overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.land-2 img {
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+    /* Ensures the image covers the container */
+}
+
+.stylist {
+    /* padding-left: 73px; */
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.stylist span {
+    color: #364BC5;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.collection-1 img {
+    height: 112px;
+    width: 125px;
+    object-fit: contain;
+
+}
+
+.collection-2 img {
+    height: 112px;
+    width: 125px;
+    object-fit: contain;
+}
+
+.collection-3 img {
+    height: 112px;
+    width: 125px;
+    object-fit: contain;
+}
+
+.companies {
+    /* padding-left: 53px; */
+    display: flex;
+    padding-top: 43px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection-1 {
+    /* padding-top: 24px; */
+    display: flex;
+    align-items: center;
+    gap: 65px;
+
+}
+
+.collection-2 {
+    /* padding-top: 24px; */
+    display: flex;
+    align-items: center;
+    gap: 65px;
+
+}
+
+.collection-3 {
+    /* padding-top: 24px; */
+    display: flex;
+    align-items: center;
+    gap: 65px;
+
+}
+
+.manymore {
+    font-size: 23px;
+}
+
+.sunrise-background {
+    margin-top: 73px;
+    height: 55vh;
+    /* background: linear-gradient(to bottom,
+    #a1c4fd 0%,       
+    #c2e9fb 40%,      
+    #b0d6f2 60%,      
+    #7db9e8 80%,      
+    #364bc5 100%);  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #6674CC;
+}
+
+.text-container {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-line {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.text-line:nth-child(2) {
+    font-size: 28px;
+}
+
+.text-line:last-child {
+    font-size: 20px;
+}
+
+.text-container button {
+    height: 62px;
+    width: 232px;
+    background-color: #323951;
+    /* Add a background color to make it visible */
+    color: white;
+    /* Text color */
+    border: none;
+    /* Removes default border */
+    border-radius: 5px;
+    /* Slight border radius for rounded corners */
+    font-size: 18px;
+    /* Font size */
+    font-weight: bold;
+    /* Make text bold */
+    cursor: pointer;
+    /* Pointer cursor when hovering */
+    margin-top: 20px;
+    /* Adds space between the button and the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.knowhead {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 43px;
+    text-align: center;
+    padding-top: 43px;
+}
+
+.knowhead span {
+    color: #6674CC;
+}
+
+.sections {
+    /* padding-left: 73px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sectioninner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 5px;
+    margin-top: 19px;
+}
+
+.section {
+    height: 54px;
+    width: 80vw;
+    background-color: red;
+    /* padding-top: 12px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 12px 0px 12px;
+    border-radius: 12px;
+    background-color: #F8F8FD;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+
+/* Main Certificate Section */
+.certificate {
+    height: calc(100vh - 70px);
+    /* Takes full viewport height minus header */
+    width: 100vw;
+    padding-top: 63px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Certificate Heading */
+.certificate>p {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    height: 65px;
+}
+
+/* Highlighted Text in Heading */
+.certificate p span {
+    color: #364BC5;
+}
+
+/* Main Content Container */
+.container {
+    display: flex;
+    width: 100%;
+    /* Ensures it spans full width */
+    height: calc(100vh - 170px);
+    /* Adjusted height for consistent spacing */
+}
+
+/* Left Section (Certificate-1) */
+.certificate-1 {
+    width: 50vw;
+    /* background-color: red; */
+    padding-left: 73px;
+    /* Reduced padding to prevent overflow */
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    height: 100%;
+    /* Matches container height */
+    /* align-items: center; */
+    justify-content: center;
+}
+
+/* Inner Content of Certificate-1 */
+.certificate-1>div {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 23px;
+    /* background-color: black; */
+    height: auto;
+    /* Adjust height dynamically */
+}
+
+/* Inner Text Content */
+.certificate-1>div>div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* background-color: rosybrown; */
+}
+
+/* Highlighted Text Inside Certificate-1 */
+.certificate-1>div>div span {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* Right Section (Certificate-2) */
+.certificate-2 {
+    width: 50vw;
+    /* background-color: blue; */
+    height: 100%;
+    /* Matches container height */
+    display: flex;
+    justify-content: center;
+    /* background-color: blue; */
+    align-items: center;
+}
+
+
+.centering {
+    height: 70%;
+    width: 70%;
+    overflow: hidden;
+
+}
+
+.certificate-2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.faq {
+    background-color: #F8F8FD;
+}
+
+.headd {
+    height: 201px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 23px;
+    align-items: center;
+}
+
+.headstart {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.headend {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.headend span {
+    color: #364BC5;
+}
+
+.realfaq {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 7px;
+}
+
+.folder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 932px; */
+    width: 75vw;
+    height: 91px;
+    padding: 0px 41px;
+    background-color: white;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.folder>div {
+    max-width: 832px;
+}
+
+.general {
+    height: 112px;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    justify-content: center;
+    font-size: 20px;
+    padding-bottom: 19px;
+}
+
+.general span {
+    color: #364BC5;
+}
+
+.websi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 73px;
+}
+
+
+/* Footer Styles */
+footer {
+    /* background-color: #111; */
+    color: black;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+footer h2 {
+    padding-bottom: 33px;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Social Icons */
+.social-icons a {
+    font-size: 20px;
+    margin: 0 10px;
+
+    color: black;
+    /* transition: 0.3s; */
+}
+
+
+
+.fab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-icons a:hover {
+    color: #4CAF50;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+}
+
+.nav-2 ul svg {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width: 455px) {
+    nav {
+        justify-content: space-between;
+        padding: 0px 31px 0px 0px;
+        /* background-color: red; */
+        width: 100%;
+    }
+
+
+    .nav-2 ul li {
+        display: none;
+    }
+
+    .nav-2 ul svg {
+        display: block;
+    }
+
+    .lander {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .land-1 {
+        height: 45vh;
+        width: 100vw;
+        padding-top: 71px;
+    }
+
+    .land-2 {
+        height: 40vh;
+        width: 100vw;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .land-2 img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .info div {
+        max-width: 321px;
+    }
+
+    .text {
+        max-width: 392px;
+        padding-top: 83px;
+    }
+
+    .companies {
+        flex-direction: row;
+        gap: 93px;
+    }
+
+    .collection-1 {
+        flex-direction: column;
+    }
+
+    .collection-2 {
+        flex-direction: column;
+    }
+
+    .collection-3 {
+        display: none;
+    }
+
+    .sections {
+        padding: 0px;
+    }
+
+    .sections p {
+        margin: 0px 39px;
+    }
+
+    .section {
+        font-size: 17px;
+        margin: 0px 32px;
+        width: 100vw;
+        padding-left: 41px;
+        padding-right: 41px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .certificate-1 {
+        padding: 23px 22px;
+        height: 50vh;
+        /* background-color: blue; */
+        /* justify-content: flex-start; */
+        align-items: flex-start;
+        width: 100vw;
+        gap: 33px;
+    }
+
+    .certificate-2 {
+        width: 100vw;
+        /* background-color: red; */
+    }
+
+    .centering {
+        width: 100%;
+        padding: 0px 12px;
+        height: 100%;
+    }
+
+    .certificate-1>div>div {
+        width: 316px;
+    }
+
+    .folder {
+        width: 100vw;
+        font-size: 19px;
+
+    }
+
+    .folder div {
+        width: 330px;
+        padding-left: 23px;
+    }
+
+    .folder svg {
+        padding-right: 23px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    nav {
+        justify-content: space-between;
+        padding: 0px 31px 0px 0px;
+        /* background-color: red; */
+        width: 100%;
+    }
+
+
+    .nav-2 ul li {
+        display: none;
+    }
+
+    .nav-2 ul svg {
+        display: block;
+    }
+
+    .lander {
+        flex-direction: column;
+        /* background-color: red; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .land-1 {
+        height: 45vh;
+        width: 100vw;
+        /* background-color: red; */
+        /* justify-content: center; */
+        align-items: center;
+        padding-top: 71px;
+        padding-left: 0px;
+    }
+
+    .land-2 {
+        height: 40vh;
+        width: 100vw;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .land-2 img {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .info div {
+        max-width: 321px;
+    }
+
+    .deltab {
+        /* background-color: green; */
+        text-align: center;
+    }
+
+    .text {
+        max-width: 392px;
+        padding-top: 73px;
+        /* background-color: red; */
+    }
+
+    .stylist {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .companies {
+        flex-direction: row;
+        gap: 93px;
+    }
+
+    .collection-1 {
+        flex-direction: column;
+    }
+
+    .collection-2 {
+        flex-direction: column;
+    }
+
+    .collection-3 {
+        flex-direction: column;
+    }
+
+    .sections {
+        padding: 0px;
+    }
+
+    .sections p {
+        margin: 0px 39px;
+    }
+
+    .section {
+        font-size: 17px;
+        margin: 0px 32px;
+        padding-left: 41px;
+        padding-right: 41px;
+        width: 100vw;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .certificate-1 {
+        padding: 23px 22px;
+        height: 30vh;
+        /* background-color: blue; */
+        /* justify-content: flex-start; */
+        align-items: flex-start;
+        width: 100vw;
+        gap: 33px;
+    }
+
+    .certificate-2 {
+        width: 100vw;
+        /* background-color: red; */
+    }
+
+    .centering {
+        width: 100%;
+        padding: 0px 12px;
+        height: 100%;
+    }
+
+    .certificate-1>div>div {
+        width: 716px;
+    }
+
+    .folder {
+        width: 100vw;
+        font-size: 19px;
+
+    }
+
+    .folder div {
+        width: 330px;
+        padding-left: 23px;
+    }
+
+    .folder svg {
+        padding-right: 23px;
+    }
+}
